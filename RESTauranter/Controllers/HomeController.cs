@@ -39,6 +39,10 @@ namespace RESTauranter.Controllers
                 _context.reviews.Add(review);
                 _context.SaveChanges();
             }
+            else
+            {
+                return View("Index");
+            }
             return RedirectToAction("AllReviews");
         }
 
