@@ -1,0 +1,8 @@
+<h1>Reviews!</h1>
+@foreach(var review in @ViewBag.reviews)
+{
+    <h3>Review for: @review.restaurant</h3>
+    <h3>@review.stars stars</h3>
+    <h4>Reviewer: @review.reviewer, @review.visitdate.ToString("MMM d, yyyy")</h4>
+    <p>@review.reviewtext</p>
+}

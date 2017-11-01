@@ -1,0 +1,28 @@
+<h1>Write a new Review:</h1>
+<form action="/review/create/" method="post">
+    <label>
+        Reviewer Name: <input type="text" name="reviewer">
+    </label>
+    <label>
+        Restaurant Name: <input type="text" name="restaurant">
+    </label>
+    <label>
+        Stars:
+        <select name="stars">
+            <option value="5">5</option>
+            <option value="4">4</option>
+            <option value="3">3</option>
+            <option value="2">2</option>
+            <option value="1">1</option>
+        </select>
+    </label>
+    <label>
+        Review:
+        <textarea name="reviewtext" cols="30" rows="10"></textarea>
+    </label>
+    <label>
+        Date of visit: <input type="date" name="visitdate">
+    </label>
+    <input type="submit" value="Submit">
+</form>
+<button><a href="/review/all/">Click Here to See All Current Reviews</a></button>
